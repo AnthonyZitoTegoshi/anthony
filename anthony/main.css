@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background: url('img/ceu_noturno.jpg') no-repeat center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+main {
+	position: relative;
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+}
+
+.container {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-content: space-around;
+	align-items: center;
+}
+
+.row {
+	position: relative;
+	width: 100%;
+	padding: 5px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-content: space-around;
+	align-items: flex-start;
+}
+
+[class*="col"] {
+	position: relative;
+	width: 100%;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px;
+	background-color: #eeea;
+}
+
+.col-1 {width: 8.3333%;}
+.col-2 {width: 16.6666%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.3333%;}
+.col-5 {width: 41.6666%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.3333%;}
+.col-8 {width: 66.6666%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.3333%;}
+.col-11 {width: 91.6666%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 900px) {
+	[class*="col"] {
+		width: 100%;
+	}
+	
+	.row {
+		flex-flow: row wrap;
+	}
+}
+
+img {
+	position: relative;
+	display: block;
+	margin: 10px auto !important;
+}
+
+p {
+	position: relative;
+	display: block;
+	padding: 10px 0;
+	text-align: justify;
+	text-indent: 20px
+}
+
+.profile {
+	width: 100px;
+	height: 100px;
+}
+
+.img {
+	width: 100px;
+}
+
+.nocolor {
+	background-color: transparent;
+}
+
+.rounded {
+	border-radius: 50%;
+}
+
+.center {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+}
+
+.title {
+	color: #fff;
+	padding: 10px;
+	border-radius: 99999px;
+	background-color: #0006;
+}
